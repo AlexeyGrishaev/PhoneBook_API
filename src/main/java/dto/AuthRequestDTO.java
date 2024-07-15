@@ -11,11 +11,6 @@ import lombok.ToString;
 @Builder
 
 public class AuthRequestDTO {
-//    {
-//        "username": "string",
-//        "password": "string"
-//    }
-
     private String username;
     private String password;
 

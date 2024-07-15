@@ -18,7 +18,7 @@ public class GetAllContactsTestOkhttp {
 
 
 
-    String token = "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX1VTRVIiXSwic3ViIjoibG9ja2VyQGdtYWlsLmNvbSIsImlzcyI6IlJlZ3VsYWl0IiwiZXhwIjoxNzIwODcwNTQ4LCJpYXQiOjE3MjAyNzA1NDh9.fgqOnHO8qywxo2Ha67f8AM0Ql26KMZpVmsyNFm2swX8";
+    String token = "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX1VTRVIiXSwic3ViIjoibG9ja2VyQGdtYWlsLmNvbSIsImlzcyI6IlJlZ3VsYWl0IiwiZXhwIjoxNzIxNjQ0MDA0LCJpYXQiOjE3MjEwNDQwMDR9.Gpxy-8NPmPxRFkLRlTmR-fgQ_nAJNmccdZfF5CY0jA4\"";
 
     Gson gson = new Gson();
     OkHttpClient client = new OkHttpClient();
@@ -57,5 +57,6 @@ public class GetAllContactsTestOkhttp {
 
         ErrorDTO errorDTO = gson.fromJson(response.body().string(),ErrorDTO.class);
         Assert.assertEquals(errorDTO.getError(),"Unauthorized");
+
     }
 }
